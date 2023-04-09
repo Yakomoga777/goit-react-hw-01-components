@@ -1,16 +1,11 @@
+import Profile from './Profile/Profile';
+import Description from './Profile/Description';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      React homework template 1
+    <div>
+      {<Profile />}
+      {<Description />}
     </div>
   );
 };
