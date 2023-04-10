@@ -1,12 +1,17 @@
 .description {
 }
 .avatar {
+  width: 100%;
 }
 
 .name {
   color: tomato;
+
+  text-align: center;
 }
 .tag {
+  text-align: center;
 }
 .location {
+  text-align: center;
 }

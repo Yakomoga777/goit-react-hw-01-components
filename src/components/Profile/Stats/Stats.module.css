@@ -1,6 +1,21 @@
 .stats {
+  width: 300px;
+  padding: 0;
+
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 25px;
+
+  outline: 1px dashed grey;
 }
 .label {
+  display: block;
+  text-align: center;
 }
 .quantity {
+  display: block;
+  text-align: center;
 }
