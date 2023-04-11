@@ -20,5 +20,3 @@ export default function Profile() {
     </div>
   );
 }
-
-console.log(Profile);

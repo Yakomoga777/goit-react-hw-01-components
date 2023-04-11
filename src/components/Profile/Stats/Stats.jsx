@@ -10,15 +10,15 @@ export default function Stats({ followers, views, likes }) {
     <ul className={css.stats}>
       <li>
         <span className={css.label}>Followers</span>
-        <span className={css.quantity}>{user.stats.followers}</span>
+        <span className={css.quantity}>{followers}</span>
       </li>
       <li>
         <span className={css.label}>Views</span>
-        <span className={css.quantity}>{user.stats.views}</span>
+        <span className={css.quantity}>{views}</span>
       </li>
       <li>
         <span className={css.label}>Likes</span>
-        <span className={css.quantity}>{user.stats.likes}</span>
+        <span className={css.quantity}>{likes}</span>
       </li>
     </ul>
   );
