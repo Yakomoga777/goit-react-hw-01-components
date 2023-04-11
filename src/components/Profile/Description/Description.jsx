@@ -10,12 +10,16 @@ import user from '../../../user.json';
 
 export default function Description({ username, tag, location, avatar }) {
   return (
-    <div className={css.description} key={user.username}>
+    <div className={css.description}>
       <img src={user.avatar} alt="User avatar" className={css.avatar} />
       <p className={css.name}>{user.username}</p>
       <p className={css.tag}>{user.tag}</p>
       <p className={css.location}>{user.location}</p>
-      <Stats />
+      <Stats
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
+      />
     </div>
   );
 }

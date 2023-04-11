@@ -9,7 +9,14 @@ import user from '../../user.json';
 export default function Profile() {
   return (
     <div className={css.profile}>
-      <Description />
+      {
+        <Description
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+        />
+      }
     </div>
   );
 }

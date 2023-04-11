@@ -23,7 +23,7 @@ export default function Stats({ followers, views, likes }) {
     </ul>
   );
 }
-console.log(user.likes);
+console.log(user.stats.followers);
 // Прописую типи пропсів
 Stats.propTypes = {
   followers: PropTypes.number.isRequired,
