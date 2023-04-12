@@ -8,7 +8,7 @@ import user from '../../../user.json';
 
 // Прописуємо функцію КОМПОНЕНТА
 
-export default function Description({ username, tag, location, avatar }) {
+function Description({ username, tag, location, avatar }) {
   return (
     <div className={css.description}>
       <img src={avatar} alt="User avatar" className={css.avatar} />
@@ -23,6 +23,8 @@ export default function Description({ username, tag, location, avatar }) {
     </div>
   );
 }
+
+export default Description;
 
 Description.propTypes = {
   username: PropTypes.string.isRequired,

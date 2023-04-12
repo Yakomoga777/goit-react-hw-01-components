@@ -6,17 +6,16 @@ import user from '../../user.json';
 
 // Прописуємо функцію КОМПОНЕНТА
 
-export default function Profile() {
+function Profile() {
   return (
     <div className={css.profile}>
-      {
-        <Description
-          username={user.username}
-          tag={user.tag}
-          location={user.location}
-          avatar={user.avatar}
-        />
-      }
+      <Description
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+      />
     </div>
   );
 }
+export default Profile;

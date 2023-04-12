@@ -5,7 +5,7 @@ import user from '../../../user.json';
 
 //Прописую функцію компонента
 
-export default function Stats({ followers, views, likes }) {
+function Stats({ followers, views, likes }) {
   return (
     <ul className={css.stats}>
       <li>
@@ -23,7 +23,9 @@ export default function Stats({ followers, views, likes }) {
     </ul>
   );
 }
-console.log(user.stats.followers);
+
+export default Stats;
+
 // Прописую типи пропсів
 Stats.propTypes = {
   followers: PropTypes.number.isRequired,
