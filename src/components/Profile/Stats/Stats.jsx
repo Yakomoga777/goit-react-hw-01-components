@@ -1,8 +1,6 @@
 import css from './Stats.module.css';
 import PropTypes from 'prop-types';
 
-import user from '../../../user.json';
-
 //Прописую функцію компонента
 
 function Stats({ followers, views, likes }) {
