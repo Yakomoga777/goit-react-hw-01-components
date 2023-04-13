@@ -7,10 +7,12 @@ import FriendList from './FriendList/FriendList';
 
 import items from '../data.json';
 import friendsItems from '../friends.json';
+import { GlobalStyle } from './GlobalStyles';
 
 export const App = () => {
   return (
     <>
+      <GlobalStyle />
       <Profile
         username={user.username}
         tag={user.tag}

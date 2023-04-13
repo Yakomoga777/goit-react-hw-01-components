@@ -6,7 +6,7 @@ export default function FriendItem({ avatar, name, isOnline, id }) {
   let variant = isOnline ? 'online' : 'offline'; // визначення змінної variant
   const icon = ['icon', variant]; // створення масиву з класами
   return (
-    <li className={css.friend} key={id}>
+    <li className={css.friend}>
       <div className={css.friendCard}>
         <p className={css[icon]}></p>
         <img src={avatar} alt={`foto ${name}`}></img>
@@ -20,5 +20,4 @@ FriendItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
-  id: PropTypes.number.isRequired,
 };
