@@ -17,7 +17,7 @@ export default function FriendItem({ avatar, name, isOnline, id }) {
   return (
     <Friend>
       <FriendCard>
-        <IconPlace>
+        <IconPlace isOnline={isOnline}>
           <TiMediaRecord size="40px" />
         </IconPlace>
         <FriendImg src={avatar} alt={`foto ${name}`}></FriendImg>

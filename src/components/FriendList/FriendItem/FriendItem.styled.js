@@ -26,13 +26,13 @@ export const FriendName = styled.p`
   font-size: 20px;
 `;
 
-export const IconPlace = styled.div`
+export const IconPlace = styled.span`
   /* color: green; */
   margin-top: auto;
   margin-bottom: auto;
 
   svg {
-    color: green;
+    color: ${({ isOnline }) => (isOnline ? 'green' : 'red')};
   }
 `;
 
