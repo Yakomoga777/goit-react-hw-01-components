@@ -12,8 +12,6 @@ import {
 } from './FriendItem.styled';
 
 export default function FriendItem({ avatar, name, isOnline, id }) {
-  let variant = isOnline ? 'online' : 'offline'; // визначення змінної variant
-  const icon = ['icon', variant]; // створення масиву з класами
   return (
     <Friend>
       <FriendCard>
