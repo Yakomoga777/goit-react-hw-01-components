@@ -8,6 +8,8 @@ import FriendList from './FriendList/FriendList';
 import items from '../data.json';
 import friendsItems from '../friends.json';
 import { GlobalStyle } from './GlobalStyles';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import transactions from '../transactions.json';
 
 export const App = () => {
   return (
@@ -21,7 +23,15 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={items} />
+      <Statistics stats={items} />
       <FriendList friends={friendsItems} />
+      <TransactionHistory
+        items={transactions}
+        // id={transactions.id}
+        // type={transactions.type}
+        // amount={transactions.amount}
+        // currency={transactions.currency}
+      />
     </>
   );
 };
